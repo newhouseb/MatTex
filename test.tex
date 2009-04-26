@@ -1,0 +1,25 @@
+\documentclass{article}
+\title{Matlab and LaTeX integration}
+\author{Ben Newhouse, Super Happy Dev House 32}
+\begin{document}
+\maketitle
+\section{Abstract}
+I am lazy.  I do lots of problem sets.  I do lots of problem sets in LaTeX because I am to lazy to find real paper to write on.  I also use matlab because I am too lazy to find a calculator.  From one script I want to be able to do everything.  Screw MVC, I need what PHP is to HTML what I'm doing is to LaTeX.
+As you can see here, $1 + 1=$
+<?ml
+1 + 1
+?>
+The integral of
+\begin{displaymath}
+<?ml
+syms x;
+latex(x^2 + log(x))
+?>
+\end{displaymath}
+is
+\begin{displaymath}
+<?ml
+latex((int(x^2 + log(x),x)))
+?>
+\end{displaymath}
+\end{document}
