@@ -1,0 +1,5 @@
+The code is neither clean or pretty, but the syntax is:
+
+./mattex.sh [tex file]
+
+At the moment, mattex.sh calls "open [parsed tex file]", which on a Mac opens the TeX file with the default program.  You might want to replace this last line with whatever call you use to invoke the LaTeX compiler.
